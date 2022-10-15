@@ -40,7 +40,7 @@ az monitor log-analytics workspace create --resource-group %RESOURCE_GROUP_NAME%
 
 az monitor app-insights component create --app %APP_INSIGHTS_NAME% --location %LOCATION% --kind web --resource-group %RESOURCE_GROUP_NAME% --application-type web --workspace %LOG_ANALYTICS_WORKSPACE%
 
-az webapp config appsettings set --name %APP_SERVICE_NAME% --resource-group %RESOURCE_GROUP_NAME% --settings APPINSIGHTS_INSTRUMENTATIONKEY=2bd6a60f-e883-4970-8b7f-ea3e3a54cc8e APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=2bd6a60f-e883-4970-8b7f-ea3e3a54cc8e ApplicationInsightsAgent_EXTENSION_VERSION=~2
+az webapp config appsettings set --name %APP_SERVICE_NAME% --resource-group %RESOURCE_GROUP_NAME% --settings APPINSIGHTS_INSTRUMENTATIONKEY=2bd6a60f-e883-4970-8b7f-ea3e3a54cc8e APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=2bd6a60f-e883-4970-8b7f-ea3e3a54cc8e VERIFY_TOKEN=hello WHATSAPP_TOKEN=EABOVkywGH6UBANM72Lnt5ocQs42p1Ja0BvwGJP98vkLhiShuzOY1uQ6LlHjl5EOVf1OR86tajOZCsm6DRrG2KEYdaMPLYi7PU4t0MdmZAMNQqxlxZBfhtE2Te1PtNZAR37RQawAyyZC2Hd1jxlVVVWWTXsK5dZBkgLZBqOLow9OWZBDLW170TlCf5YBhjFp5VNd2ge9VuQB1gAZDZD AZURE_BOT_SECRET=qaZW2T0UAP4.69lYmshpdJqGGS5l-7OHFmpJ3sAU0M3XTncMRnY6UQk ApplicationInsightsAgent_EXTENSION_VERSION=~2
 
 ** Code Deployment   
  Deployment Via CICD (GitHub Actions)
